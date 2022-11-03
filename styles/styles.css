@@ -1,0 +1,212 @@
+body{
+    background-color:black;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+h1{
+    margin: 0 0 0 0;
+}
+h2{
+    margin: 0 0 0 0;
+}
+.Nav>ul{
+    text-align: center;
+}
+li{
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 56px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: rgba(17, 17, 17, 0.306);
+    color: rgb(31, 24, 24);
+    font-weight:bold;
+  }
+.headerCV{
+    position: relative;
+    display:block;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+.headerCV>h1,h2{
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+.Nav {
+    border-radius: 20px;
+    z-index: 1;
+    margin-top:0vh ;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #9294d2bc;
+  }
+.Nav>a{
+    text-align: center;
+  }
+section{
+    position:fixed;
+    display: fixed;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+}
+.headerCV>h1,h2{
+    text-align:center;
+    color:black;
+    background-color: rgba(0, 0, 0, 0);
+}
+.CV__Wrapp{
+    position:absolute;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-content:center;
+    align-items: center;
+
+    grid-template-areas: 
+    "a b c"
+    "d e f"
+    "g h i"
+    ;
+    
+    margin: 5em;
+    background-color: rgba(250, 235, 215, 0.279);
+    width: max-content;
+    height: min-content;
+    border-radius: 20px;
+    margin-top: 2em;
+    z-index: -1;
+}
+.Container{
+    width:100px;
+    height: 100px;
+    background-color: powderblue;
+    color: black;
+    border-radius: 20px;
+    margin:05em;
+    display:inline;
+    padding: 10px;
+    z-index: -1;
+}
+
+.div2{
+    display:flex;
+    justify-content: center;
+    align-items:right;
+}
+.Side{
+    width:19vw;
+    height: 300px;
+    border-radius: 20px;
+    margin:0.5em;
+    background-color:rgba(215, 238, 250, 0.548);
+    margin: 2em;
+    margin-top: 5em;
+    margin-left: 75%;
+    justify-content: center;
+    align-items:center;
+    display:flex;
+    position: absolute;
+    z-index: -1;
+}
+Footer{
+    position:absolute;
+    display:flex;
+    background-color: rgba(0, 0, 0, 0.071);
+    min-height: 10vh;
+    width: 100%;
+    color:white;
+    
+}
+pre{
+    position:absolute;
+    background-color: rgba(240, 248, 255, 0);
+    color:white;
+    margin-top:1%;
+    z-index: 3;
+    bottom: 0%;
+}
+.i1{
+    grid-area: a;
+    display: flex;
+}
+.i2{
+    grid-area: b;
+}
+.i3{
+    grid-area: c;
+}
+.i4{
+    grid-area: d;
+}
+.i5{
+    grid-area: e;
+}
+.i6{
+    grid-area: f;
+}
+.bg2,.bg1,.bg3{
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg1{
+    background-image: url("https://i0.wp.com/csengineermag.com/wp-content/uploads/2020/04/AdobeStock_317396428.jpeg?fit=5760%2C3240&ssl=1");
+    min-height: 100vh;
+    margin-top: 80vh;
+    z-index: -1;
+}
+.bg2{
+    background-image: url("https://th.bing.com/th/id/R.f9d3f0c331f3a335e7c1a9fe1ce91623?rik=6Z24z1%2fveRg8Zg&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f05%2fReally-Cool-HD-Wallpaper.jpg&ehk=oR22ZwKsjj40kx6nPTkZjH2POyUSqLxXc3wP4sxMBN4%3d&risl=&pid=ImgRaw&r=0");
+    height: 100vh;
+    z-index: -1;
+}
+.bg3{
+    background-image: url("https://th.bing.com/th/id/R.d161ee0535c5ecf9201bd48e38291834?rik=a0fXbZltpKXDBw&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fDCWHIOy.jpg&ehk=xEHT6b6qeZLdsz4EsO98DGlNCmtg4PksxJCUPaWbmCw%3d&risl=&pid=ImgRaw&r=0");
+    min-height: 100vh; 
+    padding: 1em 1em;
+    z-index: -1;
+}
+.caption {
+    position: absolute;
+    left: 0;
+    top: 0%;
+    width: 100%;
+    text-align: center;
+    color: #000;  
+    z-index: 2;
+      
+}
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+    
+  }
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
